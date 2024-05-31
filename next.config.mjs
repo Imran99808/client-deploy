@@ -16,7 +16,12 @@ const nextConfig = {
                 protocol:'https',
                 hostname:'res.cloudinary.com',
                 
-            }
+            },
+            {
+                protocol:'https',
+                hostname:'server-deploy-6984.onrender.com',
+                
+            },
         ]
       },
 
