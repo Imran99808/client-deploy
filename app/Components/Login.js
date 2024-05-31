@@ -9,7 +9,7 @@ export default  function Login() {
   const router=useRouter();
    const handler=async()=>{
      console.log('emon')
-    const url= await post('api/google/auth',{state:'http://localhost:3000',values});
+    const url= await post('api/google/auth',{state:'https://client-deploy-rho.vercel.app/',values});
     router.push(url.url)
    }
   return (
