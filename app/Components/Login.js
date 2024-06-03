@@ -4,6 +4,9 @@ import {fetch_data} from '@/app/lib/fetchdata'
 import { post } from '@/app/lib/fetchdata'
 import { theme } from '../context/AddContext';
 import { useRouter } from 'next/navigation'
+import { IonIcon } from '@ionic/react';
+import {personOutline } from 'ionicons/icons';
+
 export default  function Login() {
   const {values}=useContext(theme);
   const router=useRouter();
@@ -13,8 +16,9 @@ export default  function Login() {
     router.push(url.url)
    }
   return (
-    <div onClick={handler} className='b h-full w-full rounded-full'>
+    <div onClick={handler} className='b flex justify-center items-center h-full w-full rounded-full'>
       <ion-icon name="person-outline" size=''></ion-icon>
+    <IonIcon icon={personOutline} 
       </div>
   )
 }
