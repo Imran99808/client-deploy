@@ -17,7 +17,7 @@ export default  function Login() {
    }
   return (
     <div onClick={handler} className='b flex justify-center items-center h-full w-full rounded-full'>
-      <ion-icon name="person-outline" size=''></ion-icon>
+    
     <IonIcon icon={personOutline} 
       </div>
   )
