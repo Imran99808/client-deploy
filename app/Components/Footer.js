@@ -1,13 +1,12 @@
 'use client'
-import React from 'react'
-// import {Dink} from '@/app/lib/Link'
 import React, { useContext } from 'react'
-import { theme } from '../context/AddContext';
+// import {Dink} from '@/app/lib/Link'
 import Link from 'next/link'
 import { IonIcon } from '@ionic/react'
 
 //  import {IonIcon} from '@ionic/react'
 import { logoIonic, heartOutline, homeOutline, gridOutline, bagOutline, settingsOutline } from 'ionicons/icons'
+import { theme } from '../context/AddContext'
 export default function Footer() {
   const {values}=useContext(theme); 
   const c = '/categories'
@@ -15,7 +14,7 @@ export default function Footer() {
     <div className=' nav bg-[#fff] fixed bottom-0 right-0 left-0'>
       <div className=" container    z-50 ">
         <ul className='h-full flex justify-between items-center p-3 items'>
-          <li className='text-3xl   font-normal'><Link href="/" replace> 
+          <li className='text-3xl   font-normal'><Link href="/" replace>
             {/* <ion-icon  name="home-outline" ></ion-icon> */}
             <IonIcon icon={homeOutline} />
           </Link></li>
@@ -23,7 +22,7 @@ export default function Footer() {
             <IonIcon icon={gridOutline} /></Link></li>
           <li className='text-3xl relative   '>
           
-            <span className={` absolute top-[-5px] left-5 ${values.length===0&&'hidden'}   bg-red-600 text-xs  pl-1 pe-1 rounded-full text-[#fff]`}>{values.length}</span>
+            <span className={` absolute top-[-5px] left-5    bg-red-600 text-xs  ${values.length===0&&'hidden'}  pl-1 pe-1 rounded-full text-[#fff]`}>{values.length}</span>
             <Link
               href={{
                 pathname: "/cart",
