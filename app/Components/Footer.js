@@ -15,7 +15,7 @@ export default function Footer() {
     <div className=' nav bg-[#fff] fixed bottom-0 right-0 left-0'>
       <div className=" container    z-50 ">
         <ul className='h-full flex justify-between items-center p-3 items'>
-          <li className='text-3xl   font-normal'><Link href="/" replace>
+          <li className='text-3xl   font-normal'><Link href="/" replace> 
             {/* <ion-icon  name="home-outline" ></ion-icon> */}
             <IonIcon icon={homeOutline} />
           </Link></li>
