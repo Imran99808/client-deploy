@@ -63,7 +63,7 @@ export default function Wishbutton({ productData, remove, cb }) {
 
   return (
     <>
-      <li onClick={handler}>{remove ? 'remove' :<IonIcon icon={data.hasWishlist ? heart : heartOutline} />}</li>
+       <button className='flex items-center' onClick={handler}>{remove ? 'remove' :<IonIcon icon={data.hasWishlist ? heart : heartOutline} />}</button>
       {/*
   
   <li onClick={handler}><ion-icon name={data.hasWishlist ? 'heart' : 'heart-outline'}>opp</ion-icon></li>
