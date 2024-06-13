@@ -37,7 +37,7 @@ function AddCard({data,from,colorindex,qty,card}) {
 
 
  const has=check(values,upData)   ;
-    const handler=async()=>{
+    const handler=async(e)=>{
      e.preventDefault();
    
 if(!has){
