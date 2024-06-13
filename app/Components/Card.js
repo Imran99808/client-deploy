@@ -42,7 +42,7 @@ export default function Card({value}) {
     </div>
     
     <h1 class=" name truncate text-center">{value.name}</h1>
-    <p className='mt-1  text-[1.25rem] font-medium text-[#020310]'>
+    <p className='mt-1  text-[1.25rem] text-center font-medium text-[#020310]'>
       {value.discountPrice?value.discountPrice:value.price}
 
       <span className=' ml-[0.25rem] text-[#747794]  text-[0.875rem] line-through'>{value.discountPrice&&value.price}</span>
