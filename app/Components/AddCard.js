@@ -38,7 +38,7 @@ function AddCard({data,from,colorindex,qty,card}) {
 
  const has=check(values,upData)   ;
     const handler=async()=>{
-    
+     e.preventDefault();
    
 if(!has){
       const r=await  post('api/add-cards',{id:data.id,colorIndex,qt});
@@ -57,7 +57,7 @@ if(!has){
     <>
   {
     from? <button className="btn bg-[rgba(18,38,54,1)] text-[#fff] pt-2 pb-2 pl-4 pr-4 rounded-lg   " onClick={handler} disabled={has}>Add to cart</button>
-        :card?<button className=' flex items-center'> <IonIcon icon={cartOutline}/></button>:  <button className=' absolute right-4 bottom-4 rounded-full bg-b  text-[#fff] w-7 h-7 flex justify-center items-center'  onClick={handler}> <IonIcon icon={addOutline}/></button>
+        :card?<button className=' flex items-center' onClick={handler}> <IonIcon icon={cartOutline}/></button>:  <button className=' absolute right-4 bottom-4 rounded-full bg-b  text-[#fff] w-7 h-7 flex justify-center items-center'  onClick={handler}> <IonIcon icon={addOutline}/></button>
   }
   </>
   )
