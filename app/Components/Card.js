@@ -20,7 +20,7 @@ export default function Card({value}) {
     <div className="relative imgContainer ">
       <div className="imag flex items-center justify-center  w-full bg-[rgb(210,215,219)   rounded-md">
     
-    <Image src={'http://localhost:1337'+value.img[`${check}`].url} alt='' width={300} height={100}/>
+    <Image src={'https://server-deploy-6984.onrender.com'+value.img[`${check}`].url} alt='' width={300} height={100}/>
     </div>
     <div className="color border-t-2 border-b-2 hidden ">
   
