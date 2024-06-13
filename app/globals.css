@@ -205,7 +205,49 @@ h5{
   .offer>.slick-slider>.slick-list>.slick-track>.slick-slide>div{
     margin: 0 2px;
   }
+/* new...................................... */
+.card{
+  /* border: 2px solid red; */
+  transition:all .300s;
+}
+  .l-hover{
+    background-color:white;
+    position:absolute;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.5);
+    -moz-box-shadow:0px 0px 5px rgba(0,0,0,0.5);
+    -webkit-box-shadow:0px 0px 5px rgba(0,0,0,0.5);
+    -o-box-shadow:0px 0px 5px rgba(0,0,0,0.5);
+    -ms-box-shadow:0px 0px 5px rgba(0,0,0,0.5);
+    /* transition:all .300s; */
+    transform: scale(1.1);
+    inset-inline: 3px;
+    /* box-shadow: 0 0 20px 10px #e3d9d9; */
+  }
+.imgContainer>.color{
+ /* display: none;
+  background: #fff;
+  border: 2px solid rgba(204,203,203,1);
+  border-left: none;
+  border-right: none; */
+  
+}
+.card:hover .l-hover .imgContainer .color{
+  display: flex;
+  gap:.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.card:hover .l-hover .name,
 
+  .card:hover .l-hover .p-info{
+    display: block;
+  }
+  
 
   
 }
