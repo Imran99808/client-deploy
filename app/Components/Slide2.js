@@ -25,22 +25,16 @@ export default function Slide2({data}) {
      {loop(data.data, (value, i) => {
 
 return (
-  <div key={i} className="o-card bg-white p-3 select-none  h-[184px] rounded-sm">
+ <div key={i} className=" bg-whit  p- select-none   rounded-md">
     <Link href={`products/${value.name}`}>
 
-      <div className="image  min-h-[75px] flex justify-center">
-        <Image src={ value.img[0].url} alt='' width={300} height={0} />
+      <div className="image   flex justify-center">
+        <Image src={value.img[0].url} alt='' width={400} height={400} />
      
       </div>
-
-      <h3 className='mt-3 truncate '>{value.name}</h3>
-      <span className='block text-sm'>{value.price}</span>
-      <span className=' text-sm'>{value.stock / 100 * 1}% Sold</span>
-      <div className="prograss-bar bg-[rgb(233,236,239)] h-2 ">
-        <div style={{ width: `${value.stock / 100 * 1}%` }} className={`bg-[rgb(253,157,13)] h-full`} ></div>
-
-
-      </div>
+      <h4 className='mt-1 truncate text-center '>{value.name}</h4>
+      <span className='block text-sm text-center'>{value.price}</span>
+    
     </Link>
   </div>
 
