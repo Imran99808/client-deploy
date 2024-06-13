@@ -3,9 +3,9 @@ import React, { useContext, useEffect, useState } from 'react'
 import { post } from '../lib/fetchdata';
 import { theme } from '../context/AddContext';
 import { IonIcon } from '@ionic/react';
-import { addOutline } from 'ionicons/icons';
+import { addOutline,cartOutline } from 'ionicons/icons';
 
-function AddCard({data,from,colorindex,qty}) {
+function AddCard({data,from,colorindex,qty,card}) {
   
   let qt=qty?qty:1;
   const {values,setValue}=useContext(theme)
@@ -57,7 +57,7 @@ if(!has){
     <>
   {
     from? <button className="btn bg-[rgba(18,38,54,1)] text-[#fff] pt-2 pb-2 pl-4 pr-4 rounded-lg   " onClick={handler} disabled={has}>Add to cart</button>
-        : <button className=' absolute right-4 bottom-4 rounded-full bg-b  text-[#fff] w-7 h-7 flex justify-center items-center'  onClick={handler}> <IonIcon icon={addOutline}/></button>
+        :card?<button className=' flex items-center'> <IonIcon icon={cartOutline}/></button>:  <button className=' absolute right-4 bottom-4 rounded-full bg-b  text-[#fff] w-7 h-7 flex justify-center items-center'  onClick={handler}> <IonIcon icon={addOutline}/></button>
   }
   </>
   )
