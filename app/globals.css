@@ -39,7 +39,7 @@ h5{
 @layer utilities {
     .container {
        margin: 0 auto;
-        max-width: 400px;
+        max-width: 800px;
         padding-left: 0.6rem;
         padding-right: 0.6rem;
         /* color: rgba(155 163 170 1); */
