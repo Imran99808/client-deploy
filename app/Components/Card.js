@@ -6,6 +6,8 @@ import { loop } from '../lib/loop'
 import Image from 'next/image'
 import AddCard from './AddCard'
 import Wishbutton from './Wishbutton.1'
+import { IonIcon } from '@ionic/react';
+import { searchOutline } from 'ionicons/icons';
 
 export default function Card({value}) {
   
@@ -55,7 +57,7 @@ export default function Card({value}) {
             <div className="mt-2  flex justify-center items-center  text-center gap-2 mb-2">
              <span className=' flex items-center  text-xl'>  <Wishbutton  productData={value}/> </span>
             <span className='border-l-2 border-r-2 p-1   text-xl'>  <AddCard colorindex={check} card={true} data={value}/>  </span>
-            <div className="text-xl flex items-center"><ion-icon name="search-outline"></ion-icon></div> 
+            <div className="text-xl flex items-center"><IonIcon icon={searchOutline}/></div> 
            
 
             </div>
